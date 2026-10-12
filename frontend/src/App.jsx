@@ -26,7 +26,6 @@ export default function App() {
     <div className="app-container">
       <header className="header">
         <div className="brand">
-          <span>🎬</span>
           <span>Media Planner</span>
         </div>
 
@@ -35,19 +34,19 @@ export default function App() {
             className={`tab-btn ${activeTab === 'queue' ? 'active' : ''}`}
             onClick={() => setActiveTab('queue')}
           >
-            📋 Очередь
+            Очередь
           </button>
           <button
             className={`tab-btn ${activeTab === 'planner' ? 'active' : ''}`}
             onClick={() => setActiveTab('planner')}
           >
-            ⚡ Планировщик
+            Планировщик
           </button>
           <button
             className={`tab-btn ${activeTab === 'library' ? 'active' : ''}`}
             onClick={() => setActiveTab('library')}
           >
-            📚 Библиотека
+            Библиотека
           </button>
         </nav>
 
@@ -56,7 +55,7 @@ export default function App() {
             + Добавить медиа
           </button>
           <span style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-            👤 {user.username}
+            Пользователь: {user.username}
           </span>
           <button className="btn-danger" onClick={logout}>
             Выйти
